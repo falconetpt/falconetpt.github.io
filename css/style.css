@@ -6,3 +6,12 @@
      color: #cc3399;
 }
 
+.proj-style {
+    background-color: darkgrey;
+    padding: 5%;
+}
+
+.proj {
+    padding: 5%;
+    margin: 0.5%;
+}
