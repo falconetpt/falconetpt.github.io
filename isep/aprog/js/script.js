@@ -23,7 +23,7 @@ $( document ).ready(function() {
     
     function success(result) {
        mvc.reader("https://falconetpt.github.io/isep/aprog/data/exercises.txt");
-       $('.accordion').accordion({
+       $('#accordion').accordion({
         heightStyle: "content",
         active: false,
         collapsible: true
