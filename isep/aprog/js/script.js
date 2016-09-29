@@ -23,11 +23,7 @@ $( document ).ready(function() {
     
     function success(result) {
        mvc.reader("https://falconetpt.github.io/isep/aprog/data/exercises.txt");
-       $('#accordion').accordion({
-        heightStyle: "content",
-        active: false,
-        collapsible: true
-       });
+       $('#accordion').accordion();
       }
     /*Funçao acordiao
     $( function() {
