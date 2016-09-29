@@ -1,7 +1,8 @@
 $( document ).ready(function() {
   // MVC object model
+
   var mvc = {
-    var exercises = []
+    exercises: [1, 2]
   };
   alert(mvc.exercises)
 });
