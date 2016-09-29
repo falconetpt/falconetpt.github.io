@@ -25,5 +25,5 @@ $( document ).ready(function() {
     } );
     
     //Ler file txt
-    mvc.reader(../data/exercises.txt);
+    mvc.reader("../data/exercises.txt");
 });
