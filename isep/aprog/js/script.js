@@ -16,19 +16,19 @@ $( document ).ready(function() {
                 }
             
                 rawFile.send();
-            }
+            },
     };
     
     //Ler file txt
     
-    
-    $("#accordion").accordion({
+    function success(result) {
+       mvc.reader("https://falconetpt.github.io/isep/aprog/data/exercises.txt");
+       $('.accordion').accordion({
+        heightStyle: "content",
         active: false,
-        collapsible: true,
-        heightStyle: 'content',
-        create: function( event, ui ) {mvc.reader("https://falconetpt.github.io/isep/aprog/data/exercises.txt");}
-    });
-    
+        collapsible: true
+       });
+      }
     /*Funçao acordiao
     $( function() {
         $( "#accordion" ).accordion();
