@@ -1,5 +1,14 @@
+<<<<<<< HEAD
 ED:
     a1, a2, a3 REAL
 ALG
 INICIO
 FIM
+=======
+ED:
+  a1, a2, a3 REAL
+ALG
+INICIO
+
+FIM
+>>>>>>> ad12bd8b8d3ed3486177f93b79222c2ab17230fb
