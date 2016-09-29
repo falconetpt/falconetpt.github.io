@@ -11,7 +11,7 @@ $( document ).ready(function() {
                     if(rawFile.readyState === 4)
                     {
                         var allText = rawFile.responseText;
-                        $("#accordion").text(allText);
+                        $("#accordion").html(allText);
                     }
                 }
             
