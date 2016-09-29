@@ -3,9 +3,7 @@ $( document ).ready(function() {
 
   //Funçao acordiao
   $( function() {
-      $( "#accordion" ).accordion(
-        heightStyle: "content"
-      );
+      $( "#accordion" ).accordion();
   } );
 
 });
