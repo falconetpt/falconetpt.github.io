@@ -18,15 +18,17 @@ $( document ).ready(function() {
                 rawFile.send();
             },
     };
+      
+    $.getJSON("https://falconetpt.github.io/isep/aprog/data/exercises.json", function(data) {
+        var outputHTML = "";
+        for(var i = 0; i < data.length; i++) {
+          outputHTML += data[i];
+        }
+        $('#accordion').html(outputHTML)
+    });
     
-    //Ler file txt
-    
-    function success(result) {
-       mvc.reader("https://falconetpt.github.io/isep/aprog/data/exercises.txt");
-       $('#accordion').accordion();
-      }
-    /*Funçao acordiao
+    //Funçao acordiao
     $( function() {
         $( "#accordion" ).accordion();
-    } );*/
+    } );
 });
