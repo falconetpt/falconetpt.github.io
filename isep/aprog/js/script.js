@@ -20,11 +20,17 @@ $( document ).ready(function() {
     };
     
     //Ler file txt
-    mvc.reader("https://falconetpt.github.io/isep/aprog/data/exercises.txt");
     
-        
-    //Funçao acordiao
+    
+    $("#accordion").accordion({
+        active: false,
+        collapsible: true,
+        heightStyle: 'content',
+        create: function( event, ui ) {mvc.reader("https://falconetpt.github.io/isep/aprog/data/exercises.txt");}
+    });
+    
+    /*Funçao acordiao
     $( function() {
         $( "#accordion" ).accordion();
-    } );
+    } );*/
 });
