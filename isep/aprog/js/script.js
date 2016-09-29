@@ -2,7 +2,7 @@ $( document ).ready(function() {
   // MVC object model
 
   var mvc = {
-    exercises: [1, 2]
+    exercises: []
   };
-  alert(mvc.exercises)
+  
 });
