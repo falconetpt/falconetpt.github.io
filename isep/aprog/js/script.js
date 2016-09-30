@@ -2,7 +2,9 @@ $( document ).ready(function() {
   // MVC object model
   var mvc = {
     struture: [["1B", "data/1B.txt"], 
-      ["3", "data/3.txt"]],
+      ["3", "data/3.txt"], 
+      ["4", "data/4.txt"],
+      ["5", "data/5.txt"]],
     init: function() {
       mvc.render();
     },
