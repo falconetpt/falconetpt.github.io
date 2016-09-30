@@ -17,7 +17,7 @@ $( document ).ready(function() {
         htmlStr +=    "<p>"
         htmlStr +=    "<div>";
         htmlStr +=    "<p>";
-        htmlStr +=      "<iframe src=\"" + mvc.struture[i][1] + "\" frameborder=0 width=\"450px\">";
+        htmlStr +=      "<iframe src=\"" + mvc.struture[i][1] + "\" frameborder=0 width='100%'' height='100%''>";
         htmlStr +=      "</iframe>";
         htmlStr +=    "</p>";
         htmlStr +=    "</div>";
