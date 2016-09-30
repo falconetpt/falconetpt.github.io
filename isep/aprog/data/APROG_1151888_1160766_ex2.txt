@@ -1,5 +1,0 @@
-ED:
-  lado1, lado2 REAL
-ALG
-INICIO
-FIM
