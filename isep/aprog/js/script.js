@@ -7,7 +7,7 @@ $( document ).ready(function() {
       ["5", "data/5.txt"],
       ["6", "data/6.txt"]*/],
     init: function() {
-      console.log(mvc.getFolder("data/"));
+      console.log(mvc.getFolder("data"));
       mvc.render();
     },
     getFolder: function (dir) {
