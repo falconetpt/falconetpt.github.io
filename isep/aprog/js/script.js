@@ -4,7 +4,8 @@ $( document ).ready(function() {
     struture: [["1B", "data/1B.txt"], 
       ["3", "data/3.txt"], 
       ["4", "data/4.txt"],
-      ["5", "data/5.txt"]],
+      ["5", "data/5.txt"],
+      ["6", "data/6.txt"]],
     init: function() {
       mvc.render();
     },
