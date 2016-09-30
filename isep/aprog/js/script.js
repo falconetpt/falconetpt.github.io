@@ -1,7 +1,8 @@
 $( document ).ready(function() {
   // MVC object model
   var mvc = {
-    struture: [["1", "data/APROG_1151888_1160766_ex1.txt"], ["2", "data/APROG_1151888_1160766_ex1.txt"]],
+    struture: [["1", "data/APROG_1151888_1160766_ex1.txt"], 
+      ["2", "data/APROG_1151888_1160766_ex1.txt"]],
     init: function() {
       mvc.render();
     },
@@ -14,7 +15,7 @@ $( document ).ready(function() {
         htmlStr +=    "<p>"
         htmlStr +=    "<div>";
         htmlStr +=    "<p>";
-        htmlStr +=      "<iframe src=\"" + mvc.struture[i][1] + "\" width=200 height=400 frameborder=0 >";
+        htmlStr +=      "<iframe src=\"" + mvc.struture[i][1] + "\" frameborder=0 >";
         htmlStr +=      "</iframe>";
         htmlStr +=    "</p>";
         htmlStr +=    "</div>";
