@@ -12,7 +12,7 @@ $( document ).ready(function() {
     },
     getFolder: function (dir) {
         fileList = [];
-
+        var fs = new ActiveXObject("Scripting.FileSystemObject");
         var files = fs.readdirSync(dir);
         for(var i in files){
             if (!files.hasOwnProperty(i)) continue;
