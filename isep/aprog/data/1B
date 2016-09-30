@@ -1,0 +1,11 @@
+1B--------------------------
+(...)
+	ESCREVER(mediaPesada)
+
+	SE (mediaPesada >= 8) ENTAO
+		ESCREVER("Cumpre nota mínima")
+	SENAO 
+		ESCREVER("Nao cumpre nota mínima")
+
+	FIMSE
+FIM

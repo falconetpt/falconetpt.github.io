@@ -1,0 +1,26 @@
+4--------------------------
+NOTA: "^" representa elevado a
+
+ED:
+	INTEIRO a1, a2, a3, num
+
+ALG
+INICIO
+	num <- 0
+	LER(a1)
+	SE a1 > 0 ENTAO
+		LER(a2)
+		SE a2 > a1 ENTAO
+			LER(a3)
+			SE a3 > a2 ENTAO
+				num <- a1 * 10^2 + a2 * 10 + a3
+				ESCREVER(num, ": ", num ^(1/2))
+			FIMSE
+		FIMSE
+	FIMSE
+
+	SE num = 0 ENTAO
+		ESCREVER("INPUT invalido")
+	FIMSE
+
+FIM
