@@ -2,7 +2,7 @@ $( document ).ready(function() {
   // MVC object model
   var mvc = {
     struture: [["1", "data/APROG_1151888_1160766_ex1.txt"], 
-      ["2", "data/APROG_1151888_1160766_ex1.txt"]],
+      ["2", "data/APROG_1151888_1160766_ex2.txt"]],
     init: function() {
       mvc.render();
     },
