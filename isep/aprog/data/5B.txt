@@ -1,0 +1,30 @@
+5B--------------------------
+
+ED:
+    aprovados, limiteInferior, limiteSuperior REAL
+
+ALG INICIO
+	LER(aprovados) 
+  LER(limiteInferior, limiteSuperior)
+	SE ((aprovados < 0 OU aprovados >1) OU (aprovados < limiteInferior OU aprovados > limiteSuperior)) ENTAO 
+	    ESCREVER(“Valor Invalido”) 
+	SENAO
+	    SE (aprovados <0,2) ENTAO
+	          ESCREVER(“Turma Ma”) 
+	    SENAO
+	        SE (aprovados <0,5) ENTAO 
+	          	ESCREVER(“Turma Fraca”) 
+			SENAO
+			    SE (aprovados <0,7) ENTAO 
+			        ESCREVER(“Turma Razoavel”) 
+			    SENAO
+			        SE (aprovados <0,9) ENTAO 
+			        	ESCREVER(“Turma Boa")
+			        SENAO 
+			        	ESCREVER(“Turma Excelente”) 
+					FIMSE
+				FIMSE
+			FIMSE
+		FIMSE
+	FIMSE
+FIM
