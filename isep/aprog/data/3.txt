@@ -17,7 +17,7 @@ INICIO
 				LER(a4)
 				SE a4 MOD 2 <> 0 ENTAO
 					num <- a1*10^3 + a2*10^2 + a3 * 10 + a4
-					ESCREVER("O quadrado do numero introduzido é: ", num * num)
+					ESCREVER("O quadrado do numero ", num, "é: ", num * num)
 				FIMSE
 			FIMSE
 		FIMSE
