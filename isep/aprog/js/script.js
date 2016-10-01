@@ -8,6 +8,7 @@ $( document ).ready(function() {
       ["3", "data/3.txt"], 
       ["4", "data/4.txt"],
       ["5A", "data/5A.txt"],
+      ["5B", "data/5B.txt"],
       ["6", "data/6.txt"]],
     init: function() {
       console.log(mvc.getFolder("data"));
