@@ -1,0 +1,27 @@
+Plano de testes
+
+1. Testar lados negativos ou zero:
+  1 -> a = -1, b = 1, c = 2
+  2 -> a = 2, b = 0, c = 3
+  3 -> a = 2, b = 5, c = -3
+  
+  Resultado Esperado: "O Triângulo nao pode ter lados negativos"
+
+2. Testar Triângulos impossíveis (lado 1 + lado 2 <= lado 3):
+  1 -> a = 1, b = 1, c = 2
+  2 -> a = 1, b = 3, c = 2
+  3 -> a = 1, b = 1, c = 4
+  
+  Resultado Esperado: "O Triângulo é impossível"
+
+3. Testar Triangulos Válidos
+  1 -> a = 1, b = 2, c = 2
+  2 -> a = 1, b = 3, c = 3
+  3 -> a = 4, b = 6, c = 3
+  
+  Resultados Esperados: "O triângulo é equilátero" ou "O triângulo é isósceles" ou "O triângulo é escaleno"
+  
+4. Avaliar se a classificaçao de Triângulos esta a ser feita correctamente
+   1 -> a = 1, b = 1, c = 1 | Resultado esperado: "O triângulo é equilátero"
+   2 -> a = 2, b = 3, c = 3 | Resultado esperado: "O triângulo é isósceles"
+   3 -> a = 4, b = 6, c = 3 | Resultado esperado: "O triângulo é escaleno"
