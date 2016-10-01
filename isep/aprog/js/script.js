@@ -9,7 +9,10 @@ $( document ).ready(function() {
       ["4", "data/4.txt"],
       ["5A", "data/5A.txt"],
       ["5B", "data/5B.txt"],
-      ["6", "data/6.txt"]],
+      ["6", "data/6.txt"],
+      ["7A", "data/7A.txt"],
+      ["7B", "data/7B.txt"],
+      ["7C", "data/7C.txt"]],
     init: function() {
       mvc.render();
     },
