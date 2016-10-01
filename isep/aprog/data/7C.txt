@@ -22,6 +22,14 @@ Plano de testes
   Resultados Esperados: "O triângulo é equilátero" ou "O triângulo é isósceles" ou "O triângulo é escaleno"
   
 4. Avaliar se a classificaçao de Triângulos esta a ser feita correctamente
-   1 -> a = 1, b = 1, c = 1 | Resultado esperado: "O triângulo é equilátero"
-   2 -> a = 2, b = 3, c = 3 | Resultado esperado: "O triângulo é isósceles"
-   3 -> a = 4, b = 6, c = 3 | Resultado esperado: "O triângulo é escaleno"
+    (avaliar todas as variaveis, verificando se estao a ser corretamente avaliadas)
+   1 -> a = 1, b = 1, c = 1
+   Resultado esperado: "O triângulo é equilátero"
+   
+   2 -> a = 2, b = 3, c = 3 
+        b = 2, a = 3, c = 3 
+        c = 2, a = 3, b = 3 
+   Resultado esperado: "O triângulo é isósceles"
+   
+   3 -> a = 4, b = 6, c = 3
+   Resultado esperado: "O triângulo é escaleno"
