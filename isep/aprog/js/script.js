@@ -4,6 +4,7 @@ $( document ).ready(function() {
     struture: [["1A", "data/1A.png"], 
       ["1B", "data/1B.txt"], 
       ["2A", "data/2A.png"], 
+      ["2B", "data/2B.txt"], 
       ["3", "data/3.txt"], 
       ["4", "data/4.txt"],
       ["5A", "data/5A.txt"],
