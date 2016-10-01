@@ -1,7 +1,8 @@
 $( document ).ready(function() {
   // MVC object model
   var mvc = {
-    struture: [["1B", "data/1B.txt"], 
+    struture: [["1A", "data/1A.png"], 
+      ["1B", "data/1B.txt"], 
       ["3", "data/3.txt"], 
       ["4", "data/4.txt"],
       ["5", "data/5.txt"],
