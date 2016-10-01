@@ -11,11 +11,7 @@ $( document ).ready(function() {
       ["5B", "data/5B.txt"],
       ["6", "data/6.txt"]],
     init: function() {
-      console.log(mvc.getFolder("data"));
       mvc.render();
-    },
-    getFolder: function (dir) {
-      
     },
     render: function () {
       var htmlStr = "";
