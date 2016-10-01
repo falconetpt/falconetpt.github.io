@@ -5,7 +5,7 @@ ED:
 	INTEIRO a1, a2, a3, a4, num
 ALG
 INICIO
-	// Inicia o resultado a 0 para mais tarde avaliarmos o input
+ 
 	num <- 0 
 
 	LER(a1)
