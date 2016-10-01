@@ -24,7 +24,7 @@ INICIO
 	FIMSE
 
 	SE num = 0 ENTAO
-		ESCREVER("INPUT invalido, todos algarismo tem de ser impars")
+		ESCREVER("INPUT invalido, todos algarismos tem de ser impars")
 	FIMSE
 
 FIM
