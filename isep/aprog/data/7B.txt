@@ -5,7 +5,7 @@ ALG
 INICIO
 	LER(a, b, c)
 	SE (a <= 0 ou b <= 0 ou c <= 0) ENTAO
-		ESCREVER("O Triângulo nao pode ter angulos negativos")
+		ESCREVER("O Triângulo nao pode ter lados negativos")
 	SENAO
 		SE (a + b <= c OU a + c <= b OU b + c <= a) ENTAO
 			ESCREVER("O Triângulo é impossível")
