@@ -1,0 +1,21 @@
+*NOTA: 
+	DIV – operador DIVISÃO INTEIRA – devolve o quociente inteiro.
+
+ED:
+	hSaida, mSaida, hDuracao, mDuracao INTEIRO
+	hChegada, mChegada, minutosDia, minutosViagem INTEIRO
+
+ALG
+INICIO
+	minutosDia <-- 24 * 60
+	
+	LER(hSaida, mSaida, hDuracao, mDuracao)
+	minutosViagem <-- hSaida * 60 + mSaida + hDuracao * 60 + mDuracao
+
+	SE (minutosViagem < minutosDia) ENTAO
+		ESCREVER("A hora de chegada é ", minutosViagem DIV 60, ":" , minutosViagem - minutosViagem DIV 60)
+	SENAO
+		minutosViagem <-- minutosViagem - minutosDia
+		ESCREVER("Chega amanha as ", minutosViagem DIV 60, ":" , minutosViagem - minutosViagem DIV 60)
+	FIMSE
+FIM
