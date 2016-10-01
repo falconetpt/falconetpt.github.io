@@ -1,0 +1,27 @@
+Plano de testes
+
+1. Testar ângulos negativos ou zero:
+  1 -> a = -10, b = 90, c = 100
+  2 -> a = 160, b = 0, c = 30
+  3 -> a = 150, b = 50, c = -20
+  
+  Resultado Esperado: "Todos os ângulos tem de ser maiores que 0"
+
+2. Testar se a soma dos ângulos é 180:
+  1 -> a = 100, b = 10, c = 20
+  2 -> a = 100, b = 30, c = 20
+  3 -> a = 100, b = 10, c = 40
+  
+  Resultado Esperado: "A soma de todos os ângulos do triangulo tem de ser 180"
+
+3. Testar ângulos Válidos
+  1 -> a = 100, b = 20, c = 60
+  2 -> a = 100, b = 30, c = 50
+  3 -> a = 40, b = 60, c = 80
+  
+  Resultados Esperados: "Triângulo Rectângulo" ou "Triângulo obtusângulo" ou "Triângulo acutângulo"
+  
+4. Avaliar se a classificaçao dos ângulos esta a ser feita correctamente
+  1 -> a = 70, b = 90, c = 20 | Resultado esperado: "Triângulo Rectângulo"
+  2 -> a = 100, b = 50, c = 30 | Resultado esperado: "Triângulo obtusângulo"
+  3 -> a = 40, b = 60, c = 80 | Resultado esperado: "Triângulo acutângulo"

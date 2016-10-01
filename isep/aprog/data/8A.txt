@@ -1,0 +1,16 @@
+ED: 
+	a, b, c REAL
+
+ALG
+INICIO
+	LER(a, b, c)
+	SE (a = 90 OU b = 90 OU c = 90) ENTAO
+		ESCREVER("Triângulo Rectângulo")
+	SENAO
+		SE (a > 90 OU b > 90 OU c > 90) ENTAO
+			ESCREVER("Triângulo obtusângulo")
+		SENAO
+			ESCREVER("Triângulo acutângulo")
+		FIMSE
+	FIMSE
+FIM

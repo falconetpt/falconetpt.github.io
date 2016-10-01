@@ -1,0 +1,24 @@
+ED: 
+	a, b, c REAL
+
+ALG
+INICIO
+	LER(a, b, c)
+	SE (a <= 0 OU b <= 0 c <= 0) ENTAO
+		ESCREVER("Todos os ângulos tem de ser maiores que 0")
+	SENAO
+		SE (a + b + c <> 180) ENTAO
+			ESCREVER("A soma de todos os angulos do triangulo tem de ser 180")
+		SENAO
+			SE (a = 90 OU b = 90 OU c = 90) ENTAO
+				ESCREVER("Triângulo Rectângulo")
+			SENAO
+				SE (a > 90 OU b > 90 OU c > 90) ENTAO
+					ESCREVER("Triângulo obtusângulo")
+				SENAO
+					ESCREVER("Triângulo acutângulo")
+				FIMSE
+			FIMSE
+		FIMSE
+	FIMSE
+FIM
