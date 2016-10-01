@@ -1,29 +1,20 @@
 5A--------------------------
 
-ED:
-    aprovados REAL
+Le como input a % de alunos aprovados
+Se tivermos mais alunos aprovados que alunos (>1) ou percentagens "negativas" (<0),
+	Escrevemos "Valor Invalido"
+	
+Se tivermos menos de 20% de aprovaçoes,
+	Escrevemos "Turma Ma"
 
-ALG INICIO
-	LER(aprovados) <---- LE O INPUT DA % DE ALUNOS APROVADOS
-	SE (aprovados <0 OU aprovados >1) ENTAO <---- CONFERE QUE NAO TEMOS MAIS ALUNOS APROVADOS QUE ALUNOS E ALUNOS "NEGATIVOS" 
-	    ESCREVER(“Valor Invalido”) <---- OUTPUT DE TEXTO
-	SENAO
-	    SE (aprovados <0,2) ENTAO <---- SE TIVERMOS MENOS DE 20% DE APROVADOS EXECUTAMOS O COMANDO SEGUINTE
-	          ESCREVER(“Turma Ma”) <---- OUTPUT DE TEXTO
-	    SENAO
-	        SE (aprovados <0,5) ENTAO <---- SE TIVERMOS ENTRE 20% E 50% DE APROVADOS EXECUTAMOS O COMANDO SEGUINTE
-	          	ESCREVER(“Turma Fraca”) <---- OUTPUT DE TEXTO
-			SENAO
-			    SE (aprovados <0,7) ENTAO <---- SE TIVERMOS ENTRE 50% E 70% DE APROVADOS EXECUTAMOS O COMANDO SEGUINTE
-			        ESCREVER(“Turma Razoavel”) <---- OUTPUT DE TEXTO
-			    SENAO
-			        SE (aprovados <0,9) ENTAO <---- SE TIVERMOS ENTRE 70% E 90% DE APROVADOS EXECUTAMOS O COMANDO SEGUINTE
-			        	ESCREVER(“Turma Boa")
-			        SENAO <---- SE TIVERMOS 90% OU MAISS APROVADOS EXECUTAMOS O COMANDO SEGUINTE
-			        	ESCREVER(“Turma Excelente”) <---- OUTPUT DE TEXTO
-					FIMSE
-				FIMSE
-			FIMSE
-		FIMSE
-	FIMSE
-FIM
+Se os aprovados forem >=20% e <50%,
+	Escrevemos "Turma Fraca"
+
+Se os aprovados forem >=50% e <70%,
+	Escrevemos "Turma Razoavel"
+
+Se os aprovados forem >=70% e <90%,
+	Escrevemos "Turma Boa"	
+
+Se os aprovados forem >=90%,
+	Escrevemos "Turma Excelente"	
