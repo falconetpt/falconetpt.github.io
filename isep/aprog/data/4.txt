@@ -20,7 +20,8 @@ INICIO
 	FIMSE
 
 	SE num = 0 ENTAO
-		ESCREVER("INPUT invalido")
+		ESCREVER("O numero deve estar entre 100 e 999, e sendo que
+estes algarismos devem ser introduzidos por ordem crescente")
 	FIMSE
 
 FIM
