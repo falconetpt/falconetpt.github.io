@@ -1,0 +1,24 @@
+ED:
+	a, b, c REAL
+	
+ALG
+INICIO
+	LER(a, b, c)
+	SE (a <= 0 ou b <= 0 ou c <= 0) ENTAO
+		ESCREVER("O Triângulo nao pode ter angulos negativos")
+	SENAO
+		SE (a + b <= c OU a + c <= b OU b + c <= a) ENTAO
+			ESCREVER("O Triângulo é impossível")
+		SENAO
+			SE (a = b E b = c) ENTAO
+				ESCREVER("O triângulo é equilátero")
+			SENAO
+				SE (a = b OU b = c) ENTAO
+					ESCREVER("O triângulo é isósceles")
+				SENAO
+					ESCREVER("O triângulo é escaleno")
+				FIMSE
+			FIMSE
+		FIMSE
+	FIMSE
+FIM
