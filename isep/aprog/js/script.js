@@ -49,14 +49,9 @@ $( document ).ready(function() {
         htmlStr +=      "<hr>"
         
         if(mvc.struture[i].length > 2) {
-          htmlStr += "<div class='accordion'>";
-          htmlStr += "<h3> Codigo Exemplo</h3>"
-          htmlStr +=    "<p>"
           htmlStr +=    "<pre><code class=\"python\">"
           htmlStr +=    mvc.struture[i][3] 
           htmlStr +=    "</code></pre>"
-          htmlStr +=    "</p>"
-          htmlStr +=    "</div>";
         }
         
         htmlStr +=    "</p>";
