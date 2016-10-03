@@ -76,11 +76,11 @@ $( document ).ready(function() {
         htmlStr +=      "<iframe src=\"" + mvc.struture[i][1] + "\" frameborder=0 width='100%' height='100%'>";
         htmlStr +=      "</iframe>";
         htmlStr +=    "</p><hr>";
-	/*     
+	     
 	//evaluates if code has sample code file and fetch that text
 	if(mvc.struture[i].length > 2) {
 		htmlStr += 	  "<pre><code class='java'>" + mvc.sampleCode[mvc.struture[i][2]] + "</code></pre>"
-	}	*/
+	}
         htmlStr +=    "</div>";
         htmlStr +=    "</p>";
 		
@@ -96,8 +96,7 @@ $( document ).ready(function() {
   
   //Acordion Function
   $( function() {
-      $( "#accordion" ).accordion();
-      $( ".accordion" ).accordion();
+      $( "#accordion" ).accordion({ autoHeight: false });
   } );
 
 });
