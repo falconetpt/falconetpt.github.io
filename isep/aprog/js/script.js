@@ -16,7 +16,7 @@ $( document ).ready(function() {
       ["8A", "data/8A.txt"],
       ["8B", "data/8B.txt"],
       ["8C", "data/8C.txt"],
-      ["9", "data/9.txt", mvc.exempleCode["9"]],],
+      ["9", "data/9.txt"],],
     init: function() {
       mvc.render();
     },
@@ -31,7 +31,6 @@ $( document ).ready(function() {
         htmlStr +=    "<p>";
         htmlStr +=      "<iframe src=\"" + mvc.struture[i][1] + "\" frameborder=0 width='100%' height='100%'>";
         htmlStr +=      "</iframe>";
-        htmlStr +=      "<hr>"
         htmlStr +=    "</p>";
         htmlStr +=    "</div>";
         htmlStr +=    "</p>";
@@ -48,6 +47,7 @@ $( document ).ready(function() {
   //Acordion Function
   $( function() {
       $( "#accordion" ).accordion();
+      $( ".accordion" ).accordion();
   } );
 
 });
