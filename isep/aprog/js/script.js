@@ -47,6 +47,7 @@ $( document ).ready(function() {
   //Acordion Function
   $( function() {
       $( "#accordion" ).accordion();
+      $( ".accordion" ).accordion();
   } );
 
 });
