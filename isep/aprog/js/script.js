@@ -1,6 +1,21 @@
 $( document ).ready(function() {
   // MVC object model
   var mvc = {
+    exempleCode: {"9": "import math \
+                        def hourCalc(hPartida, mPartida, sPartida, hDuracao, mDuracao, sDuracao): \
+                          sChegada = 0 \
+                          mChegada = 0 \
+                          hChegada = 0 \
+
+                          sChegada = int(math.ceil(( (sPartida + sDuracao) / 60.0 - int((sPartida + sDuracao) / 60) ) * 60)) \
+                          mChegada =  int(math.ceil(( ( (mPartida + mDuracao) / 60.0 ) - int((mPartida + mDuracao)/60 ) + int((sPartida + sDuracao) / 60) ) * 60)) \
+                          hChegada =  (hPartida + hDuracao) + int((mPartida + mDuracao) / 60) \
+
+                          if (hChegada >= 24): \
+                            hChegada = hChegada - 24 \
+
+                          return hChegada, mChegada, sChegada" \
+                 },
     struture: [["1A", "data/1A.png"], 
       ["1B", "data/1B.txt"], 
       ["2A", "data/2A.png"], 
@@ -16,7 +31,7 @@ $( document ).ready(function() {
       ["8A", "data/8A.txt"],
       ["8B", "data/8B.txt"],
       ["8C", "data/8C.txt"],
-      ["9", "data/9.txt"],],
+      ["9", "data/9.txt", mvc.exempleCode["9"]],],
     init: function() {
       mvc.render();
     },
@@ -32,6 +47,18 @@ $( document ).ready(function() {
         htmlStr +=      "<iframe src=\"" + mvc.struture[i][1] + "\" frameborder=0 width='100%' height='100%'>";
         htmlStr +=      "</iframe>";
         htmlStr +=      "<hr>"
+        
+        if(mvc.struture[i].length > 2) {
+          htmlStr += "<div class='accordion'>";
+          htmlStr += "<h3> Codigo Exemplo</h3>"
+          htmlStr +=    "<p>"
+          htmlStr +=    "<pre><code class=\"python\">"
+          htmlStr +=    mvc.struture[i][3] 
+          htmlStr +=    "</code></pre>"
+          htmlStr +=    "</p>"
+          htmlStr +=    "</div>";
+        }
+        
         htmlStr +=    "</p>";
         htmlStr +=    "</div>";
         htmlStr +=    "</p>";
