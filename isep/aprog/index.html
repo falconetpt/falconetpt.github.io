@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/default.css">
         <script src="js/highlight.pack.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
         
     </head>
     <body>
@@ -26,6 +27,21 @@
             </div>
         </div>
         <hr>
+        <pre><code class="python">import math
+def hourCalc(hPartida, mPartida, sPartida, hDuracao, mDuracao, sDuracao):
+	sChegada = 0
+	mChegada = 0
+	hChegada = 0
+	
+	sChegada = int(math.ceil(( (sPartida + sDuracao) / 60.0 - int((sPartida + sDuracao) / 60) ) * 60))
+	mChegada =  int(math.ceil(( ( (mPartida + mDuracao) / 60.0 ) - int((mPartida + mDuracao)/60 ) + int((sPartida + sDuracao) / 60) ) * 60))
+	hChegada =  (hPartida + hDuracao) + int((mPartida + mDuracao) / 60)
+	
+	if (hChegada >= 24):
+		hChegada = hChegada - 24
+	
+	return hChegada, mChegada, sChegada</code></pre>
+        
         <footer style="text-align: center">
             <strong>RICARDO GOMES | <em>SOURCE CODE:</em></strong>
             <a href="https://github.com/falconetpt/falconetpt.github.io/tree/master/isep/aprog">
