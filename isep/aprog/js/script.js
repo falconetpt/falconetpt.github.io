@@ -16,8 +16,7 @@ $( document ).ready(function() {
       ["8A", "data/8A.txt"],
       ["8B", "data/8B.txt"],
       ["8C", "data/8C.txt"],
-      ["9", "data/9.txt"],
-      ["10", "data/10.txt"],],
+      ["9", "data/9.txt"],],
     init: function() {
       mvc.render();
     },
