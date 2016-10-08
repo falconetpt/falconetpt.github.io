@@ -1,0 +1,29 @@
+NOTA:
+	ROUNDUP - Arredonda o resultado sempre para o numero inteiro seguinte
+
+ED:
+	area, precoTinta, salario, custoLitro, rendLitro, nPintores, mObra, custoTinta REAL
+ALG
+INICIO
+	LER(area, precoTinta, salario, custoLitro, rendLitro)
+
+	SE area >= 0 E area < 100 ENTAO
+		nPintores <- 1
+	SENAO
+		SE area >= 100 E area < 300 ENTAO
+			nPintores <- 2
+		SENAO
+			SE area >= 300 E area < 1000 ENTAO
+				nPintores <- 3
+			SENAO
+				nPintores <- 4
+			FIMSE
+		FIMSE
+	FIMSE
+
+	mObra <- (  ROUNDUP((area / 2 * nPintores) / 8) * salario) * nPintores
+	custoTinta <- area / rendLitro * custoLitro
+
+	ESCREVER(“O custo da mão de obra é: ”, mObra)
+	ESCREVER(“O custo da tinta é: ”, custoTinta)
+FIM

@@ -1,0 +1,22 @@
+Exercício 10 (***)
+Desenvolva um algoritmo que sabendo a hora de início de processamento de uma tarefa numa determinada máquina e o tempo que a tarefa demora a processar, calcule a hora de fim de processamento. O utilizador introduz o tempo de início de processamento em horas, minutos e segundos e o tempo de duração do processamento em segundos. O algoritmo calcula e mostra o tempo de fim de processamento em horas, minutos e segundos.
+Nota: Na resolução deste exercício não deve transformar horas e minutos em segundos.
+
+
+ED:
+	hInicio, mInicio, sInicio, duracao, hFim, mFim, sFim INTEIRO
+
+ALG
+INICIO
+	LER(hInicio, mInicio, sInicio, duracao)
+	sFim <- (sInicio + duracao) MOD 60
+	mFim <- (mInicio + (sInicio + duracao) DIV 60) MOD 60
+	hFim <- hInicio + ( (mInicio + (sInicio + duracao) DIV 60) DIV 60 )
+
+	SE (hFim >= 24) ENTAO
+		hFim <- hFim - 24 
+		ESCREVER("O processo termina a sua execução as: ", hFim, ":", mFim, ":", sFim, " do dia seguinte.")
+	SENAO
+		ESCREVER("O processo termina a sua execução as: ", hFim, ":", mFim, ":", sFim)
+	FIMSE
+FIM

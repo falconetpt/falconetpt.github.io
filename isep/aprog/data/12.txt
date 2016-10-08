@@ -1,0 +1,10 @@
+*Nota: "^" repesenta elevado a 
+
+ED:
+	x1, y1, x2, y2, distancia REAL
+ALG
+INICIO
+	LER(x1, y1, x2, y2)
+	distancia <- ( (x2-x1)^2 + (y2 - y1)^2 )^(1/2) 
+	ESCREVER("A distancia é: ", distancia)
+FIM

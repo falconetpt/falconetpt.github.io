@@ -1,0 +1,24 @@
+Plano de testes
+
+1. Testar Manha:
+	Segundos: 28 800 (8 Horas)
+	Resultado Esperado: "Bom Dia"
+	Resultado Esperado : "Bom Dia"
+
+2. Testar Tarde
+	Segundos: 46 800 (13 Horas)
+	Resultado Esperado : "Boa Tarde"
+	Resultado Obtido : "Boa Tarde"
+
+3. Testar Noite:
+	1. 	Segundos: 82800 (23 Horas)
+		Resultado Esperado: "Boa Noite"
+		Resultado Obtido: "Boa Noite"
+
+	2. 	Segundos: 3600 (1 Horas)
+		Resultado Esperado: "Boa Noite"
+		Resultado Obtido: "Boa Noite"
+
+	3.  Segundos: 93600 (2 Horas)
+		Resultado Esperado: "Boa Noite"
+		Resultado Obtido: "Boa Noite"

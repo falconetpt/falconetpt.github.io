@@ -1,0 +1,28 @@
+ED:
+	segundos, horas, minutos, controloDias INTEIRO
+ALG
+INICIO
+	LER(SEGUNDOS)
+
+	horas <- segundos DIV (60*60)
+	segundos <- segundos - segundos DIV (60*60) * (60*60)
+	minutos <- minutos DIV (60)
+	segundos <- segundos - minutos DIV (60) * 60
+
+	controloDias <- horas DIV 24
+
+	SE horas >= 24 ENTAO
+		horas <- horas - 24 * controloDias
+	FIMSE
+
+	SE horas >= 6 E horas <= 12 ENTAO
+		ESCREVER("Bom dia")
+	SENAO
+		SE horas > 12 E horas <= 20 ENTAO
+			ESCREVER("Boa Tarde")
+		SENAO 
+			ESCREVER("Boa noite")
+		FIMSE
+	FIMSE
+
+FIM

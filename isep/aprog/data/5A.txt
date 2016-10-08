@@ -1,0 +1,20 @@
+5A--------------------------
+
+Le como input a % de alunos aprovados
+Se tivermos mais alunos aprovados que alunos (>1) ou percentagens "negativas" (<0),
+	Escrevemos "Valor Invalido"
+	
+Se tivermos menos de 20% de aprovaçoes,
+	Escrevemos "Turma Ma"
+
+Se os aprovados forem >=20% e <50%,
+	Escrevemos "Turma Fraca"
+
+Se os aprovados forem >=50% e <70%,
+	Escrevemos "Turma Razoavel"
+
+Se os aprovados forem >=70% e <90%,
+	Escrevemos "Turma Boa"	
+
+Se os aprovados forem >=90%,
+	Escrevemos "Turma Excelente"	

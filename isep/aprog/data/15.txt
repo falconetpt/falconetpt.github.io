@@ -1,0 +1,14 @@
+ED:
+	x, y REAL?
+ALG
+INICIO
+	SE X MOD Y = 0 ENTAO
+		ESCREVER("X é multiplo de Y")
+	SENAO
+		SE Y MOD X = 0 ENTAO
+			ESCREVER("Y é multiplo de X")
+		SENAO
+			ESCREVER("X nao e múltiplo nem divisor de Y")
+		FIMSE
+	FIMSE
+FIM

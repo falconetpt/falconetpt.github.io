@@ -1,0 +1,28 @@
+Plano de testes
+
+1. Testar valor negativo:
+	1. x = -3
+	Resultado esperado: -3
+	Resultado Obtido: -3 
+
+	2. x = -8
+	Resultado esperado: -8
+	Resultado Obtido: -8
+
+2. Testar Zero:
+	1. x = 0
+	Resultado esperado: 0
+	Resultado Obtido: 0
+
+	2. x = 0.00
+	Resultado esperado: 0
+	Resultado Obtido: 0	
+
+3. Testar Valor positivo:
+	1. x = 7
+	Resultado esperado: 35
+	Resultado Obtido: 35
+
+	2. x = 10
+	Resultado esperado: 80
+	Resultado Obtido: 80	

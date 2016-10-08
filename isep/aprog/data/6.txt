@@ -1,0 +1,34 @@
+ED preco, precoFinal	Real
+
+ALG
+
+INICIO 
+
+LER (preco)
+
+SE (preco>200) ENTAO 
+	precoFinal <-- (preco * 0.4)
+
+SENAO 
+	SE (100 < preco <= 200) ENTAO
+		precoFinal <-- (preco * 0.6)
+
+	SENAO 
+		SE (50 < preco <= 100)
+			precoFinal <-- (preco * 0.7) 
+
+		SENAO 
+			precoFinal <-- (preco * 0.8)
+
+		FIMSE
+
+	FIMSE
+
+FIMSE
+
+ESCREVER (precoFinal)
+
+FIM
+
+
+

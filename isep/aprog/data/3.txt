@@ -1,0 +1,30 @@
+3--------------------------
+NOTA: "^" representa elevado a
+
+ED:
+	INTEIRO a1, a2, a3, a4, num
+ALG
+INICIO
+ 
+	num <- 0 
+
+	LER(a1)
+	SE a1 MOD 2 <> 0 ENTAO
+		LER(a2)
+		SE a2 MOD 2 <> 0 ENTAO
+			LER(a3)
+			SE a3 MOD 2 <> 0 ENTAO
+				LER(a4)
+				SE a4 MOD 2 <> 0 ENTAO
+					num <- a1*10^3 + a2*10^2 + a3 * 10 + a4
+					ESCREVER("O quadrado do numero ", num, "é: ", num * num)
+				FIMSE
+			FIMSE
+		FIMSE
+	FIMSE
+
+	SE num = 0 ENTAO
+		ESCREVER("INPUT invalido, todos algarismos tem de ser impars")
+	FIMSE
+
+FIM

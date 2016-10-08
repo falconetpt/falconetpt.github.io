@@ -1,0 +1,16 @@
+ED:
+	x REAL
+ALG
+INICIO
+	LER(x)
+
+	SE x < 0 ENTAO
+		ESCREVER("F(x) é igual a: ", x )
+	SENAO
+		SE x = 0 ENTAO
+			ESCREVER("F(x) é igual a: ", 0 )
+		SENAO
+			ESCREVER("F(x) é igual a: ", x*x - 2*x)
+		FIMSE
+	FIMSE
+FIM
