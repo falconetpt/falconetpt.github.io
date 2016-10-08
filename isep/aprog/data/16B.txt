@@ -1,0 +1,6 @@
+O algoritmo pede 3 numeros:
+	LER(d1, d2, d3)		-> 		d1 = 3, d2 = 2, d1 = 1
+	
+De modo a representar os 3 numeros dados como um unico numero, o programa usa multiplicacoes sucessivas por 10 para mover o 1o numero para a base 100 e o 2o para a base 10.
+
+Simplificando o que o algorimo faz essencialmente é d1 * 10 ^ 2 + d2 * 10 + d3

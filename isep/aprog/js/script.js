@@ -24,7 +24,9 @@ $( document ).ready(function() {
       ["13A", "data/13A.txt"],
       ["13B", "data/13B.txt"],
       ["14", "data/14.txt"],
-      ["15", "data/15.txt"],],
+      ["15", "data/15.txt"],
+      ["16A", "data/16A.txt"],
+      ["16B", "data/16B.txt"],],
     init: function() {
       mvc.render();
     },
