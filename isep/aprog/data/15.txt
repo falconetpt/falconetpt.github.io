@@ -1,5 +1,5 @@
 ED:
-	x, y REAL?
+	x, y REAL
 ALG
 INICIO
 	SE X MOD Y = 0 ENTAO
