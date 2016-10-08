@@ -1,24 +1,25 @@
 5B--------------------------
 
 ED:
-    aprovados, limiteInferior, limiteSuperior REAL
+    aprovados, tMa, Tfraca, tRazoavel, tBoa REAL
 
 ALG INICIO
 	LER(aprovados) 
-  LER(limiteInferior, limiteSuperior)
-	SE ((aprovados < 0 OU aprovados >1) OU (aprovados < limiteInferior OU aprovados > limiteSuperior)) ENTAO 
+	LER(tMa, Tfraca, tRazoavel, tBoa)
+  	LER(limiteInferior, limiteSuperior)
+	SE ((aprovados < 0 OU aprovados >1)) ENTAO 
 	    ESCREVER(“Valor Invalido”) 
 	SENAO
-	    SE (aprovados <0,2) ENTAO
+	    SE (aprovados < tMa) ENTAO
 	          ESCREVER(“Turma Ma”) 
 	    SENAO
-	        SE (aprovados <0,5) ENTAO 
+	        SE (aprovados < Tfraca) ENTAO 
 	          	ESCREVER(“Turma Fraca”) 
 			SENAO
-			    SE (aprovados <0,7) ENTAO 
+			    SE (aprovados < tRazoavel) ENTAO 
 			        ESCREVER(“Turma Razoavel”) 
 			    SENAO
-			        SE (aprovados <0,9) ENTAO 
+			        SE (aprovados < tBoa) ENTAO 
 			        	ESCREVER(“Turma Boa")
 			        SENAO 
 			        	ESCREVER(“Turma Excelente”) 
