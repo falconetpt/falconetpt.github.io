@@ -7,7 +7,7 @@ INICIO
 	SE (a = b E b = c) ENTAO
 		ESCREVER("O triângulo é equilátero")
 	SENAO
-		SE (a = b OU b = c) ENTAO
+		SE (a = b OU b = c OU a = c) ENTAO
 			ESCREVER("O triângulo é isósceles")
 		SENAO
 			ESCREVER("O triângulo é escaleno")
