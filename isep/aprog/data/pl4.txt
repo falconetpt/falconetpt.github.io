@@ -1,0 +1,46 @@
+PL 4	12-10-2016
+
+1.
+a) 
+A funcionalidade deste algoritmo é calcular o fatorial de um número cedido pelo utilizador. 
+
+
+ED: res, num, x, N, i INTEIRO 
+ALG
+INÍCIO
+LER (N)
+PARA (i <- 1 ATE N PASSO +1)
+	res ← 1
+	LER(num)
+	PARA (x ← num ATE 1 PASSO -1) FAZER
+		res ← res * x 
+	FIMPARA
+	
+	ESCREVER(“O resultado é : ”, res)
+FIMPARA
+FIM
+
+Nao, se o num for <= 0 o algoritmo estara sempre a subtrarir 1 ao numero, nunca atingindo o numero 1, tendo assim um loop infinito
+
+1B)
+
+ED: res, num, x INTEIRO 
+ALG
+INÍCIO
+
+LER(num)
+ENQUANTO (num >= 0)
+	res ← 1	
+	PARA (x ← num ATE 1 PASSO -1) FAZER
+		res ← res * x 
+	FIMPARA
+	
+	ESCREVER(“O resultado é : ”, res)
+	LER(num)
+FIMENQUANTO
+FIM
+
+Nao, se o num for = 0 o algoritmo estara sempre a subtrarir 1 ao numero, nunca atingindo o numero 1, tendo assim um loop infinito na mesma
+
+
+
