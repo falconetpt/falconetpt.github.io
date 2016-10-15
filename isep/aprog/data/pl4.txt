@@ -22,7 +22,7 @@ FIM
 
 Nao, se o num for <= 0 o algoritmo estara sempre a subtrarir 1 ao numero, nunca atingindo o numero 1, tendo assim um loop infinito
 
-1B)
+b)
 
 ED: res, num, x INTEIRO 
 ALG
@@ -41,6 +41,211 @@ FIMENQUANTO
 FIM
 
 Nao, se o num for = 0 o algoritmo estara sempre a subtrarir 1 ao numero, nunca atingindo o numero 1, tendo assim um loop infinito na mesma
+
+2.
+ED int n, i, numNeg
+   real percPosit, somaNeg, mediaNeg, nota
+
+ALG
+INÍCIO
+LER (n)
+mediaNeg <- 0
+numNeg <- 0
+
+PARA (i<-1 ATÉ n PASSO +1)
+
+	REPETE
+		LER (nota)
+	ENQUANTO (nota < 0 ou nota > 100)	
+
+	se (nota < 50) entao
+		somaNeg <- somaNeg + nota
+		numNeg <- numNeg + 1
+
+FIMPARA
+
+mediaNeg <- somaNeg / numNeg
+percPosit <- ( 1 - ( numNeg/n ) ) * 100
+
+ESCREVER("A media de negativas é: ", mediaNeg)
+ESCREVER("A percentagem de positivas é: ", percPosit, "%")
+
+FIM
+
+3.
+
+ED
+	n, num contImp, somaImp INT
+	mediaImp, percPositivos REAL
+
+ALG
+INICIO
+	contImp <- 0
+	somaImp <- 0
+
+	LER(num)
+	ENQUANTO (num > 0)
+		SE ( num MOD 2 <> 0 ) ENTAO
+			contImp <- contImp + 1
+			somaImp <- somaImp + num
+		n <- n + 1
+		LER(num)
+	FIMENQUANTO
+	mediaImp <- somaImp / contImp
+	percPositivos <- ( 1 - (somaImp/n) ) * 100
+FIM
+
+4.
+
+ED
+	limiteInf, limiteSup, i INT
+
+ALG
+INICIO
+	REPETE
+		LER(limiteInf, limiteSup)
+	ENQUANTO (limiteInf >= limiteSup)
+
+	PARA (i <- limiteInf ate (limiteSup - 1) Passo +1)
+		SE(i MOD 3 = 0 E i MOD 2 = 0) ENTAO
+			ESCREVER(i)
+		FIMSE
+	FIMPARE
+FIM
+
+5.
+
+ED
+	limiteInf, limiteSup, i INT
+
+ALG
+INICIO
+	REPETE
+		LER(limiteInf, limiteSup)
+	ENQUANTO (limiteInf >= limiteSup)
+
+	PARA (i <- limiteInf+1 ate limiteSup Passo +1)
+		SE(i MOD 5 = 0 E i MOD 2 <> 0) ENTAO
+			ESCREVER(i)
+		FIMSE
+	FIMPARE
+FIM
+
+6.
+ED:
+	numFinal, soma, num, menor INT
+ALG
+INICIO
+	soma <- 0
+	menor <- 0
+
+	REPETE 
+		ler (numFinal)
+	ENQUANTO (numFinal <= 0)
+
+	ENQUANTO (soma < numFinal)
+		REPETE
+			LER(num)
+		ENQUANTO (num <= 0)
+
+		SE (num < menor ou menor = 0) ENTAO
+			menor <-num
+
+		soma <- soma + num
+
+	FIMENQUANTO
+
+	ESCREVER(menor)
+FIM
+
+7.
+
+ED:
+	numFinal, produto, num, maior INT
+ALG
+INICIO
+	produto <- 1
+	maior <- 0
+
+	REPETE 
+		ler (numFinal)
+	ENQUANTO (numFinal <= 0)
+
+	ENQUANTO (produto < numFinal)
+		REPETE
+			LER(num)
+		ENQUANTO (num <= 0)
+
+		SE (num > maior) ENTAO
+			maior <-num
+
+		produto <- produto * num
+
+	FIMENQUANTO
+
+	ESCREVER(maior)
+FIM
+
+8.
+
+ALG
+INICIO
+	ler(nFunc)
+	PARA (i<-1 ATE nFunc PASSO + 1)
+		REPETE
+			LER(salarioBase, nHoras)
+		ENQUANTO( nHoras <0  Ou salario <0)
+		salario <- salarioBase * (1 + 0.02 * nHoras)
+		salariosGlobais <- salariosGlobais + salario
+		ESCREVER(salario)
+	FIMPARA
+FIM
+
+9.
+
+ED
+	a,b, c, x, y REAL
+ALG
+INICIO
+	LER(a, b, c)
+	SE (a = 0) ENTAO
+		ESCREVER("Nao e equacao do segundo grau;")
+	SENAO
+		SE ( (b ^ 2 - (4*a*c) ) ^ (1/2) < 0 ) ENTAO
+			ESCREVER("A equacao tem raizes imaginarias.")
+			SENAO
+				x = (-b + (b ^ 2 - (4*a*c) ) ^ (1/2)) / (2a) 
+				y = (-b - (b ^ 2 - (4*a*c) ) ^ (1/2)) / (2a)
+				SE ( x = y ) ENTAO 
+					ESCREVER ("A equacao tem uma raiz dupla;", x)
+				SENAO
+					ESCREVER ("A equacao tem duas raizes reais;", x, " e ", y)
+				FIMSE
+		FIMSE
+	FIMSE
+FIM
+
+10.
+NOTA assumimos que
+ED
+
+ALG
+INICIO
+
+	REPETE
+		LER(num)
+	ENQUANTO (num < 1 ou num > 20)
+
+	contador <-0
+
+	PARA (i<-0 ATE 10 PASSO +1)
+		PARA (j<-10 ATE 0 PASSO -1)
+			SE (i+j = num e i <= j) ENTAO
+				contador <- contador + 1
+			FIMSE
+		FIMPARA	
+	FIMPARA
+FIM
 
 
 
