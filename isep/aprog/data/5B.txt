@@ -6,8 +6,8 @@ ED:
 ALG INICIO
 	LER(aprovados) 
 	LER(tMa, Tfraca, tRazoavel, tBoa)
-  	LER(limiteInferior, limiteSuperior)
-	SE ((aprovados < 0 OU aprovados >1)) ENTAO 
+
+	SE (aprovados < 0 OU aprovados >1) ENTAO 
 	    ESCREVER(“Valor Invalido”) 
 	SENAO
 	    SE (aprovados < tMa) ENTAO
