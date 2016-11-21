@@ -63,4 +63,18 @@ $(function() {$('body').on('click', 'a.scrollable', function(event) {
   $('html, body').stop().animate({scrollTop: $($anchor.attr('href')).offset().top},1500,'easeInOutExpo');
   event.preventDefault();
   });
+
+//enable click event handlers
+var teamData = {
+  "ines": ;
+  "ricardo": ;
+  "flavia": ;
+  "domingos": ;
+  "hugo": ;
+}
+$(".team").click(function() {
+  alert("test ok");
+})
+
+
 });
