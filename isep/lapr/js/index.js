@@ -65,16 +65,9 @@ $(function() {$('body').on('click', 'a.scrollable', function(event) {
   });
 
 //enable click event handlers
-var teamData = {
-  "ines": ;
-  "ricardo": ;
-  "flavia": ;
-  "domingos": ;
-  "hugo": ;
-}
 $(".team").click(function() {
   alert("test ok");
-})
+});
 
 
 });
