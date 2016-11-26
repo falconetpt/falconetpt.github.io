@@ -64,10 +64,5 @@ $(function() {$('body').on('click', 'a.scrollable', function(event) {
   event.preventDefault();
   });
 
-//enable click event handlers
-$(".team").click(function() {
-  alert("test ok");
-});
-
 
 });
